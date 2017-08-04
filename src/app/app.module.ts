@@ -13,6 +13,8 @@ import { RulesCalendarComponent } from './rules-calendar/rules-calendar.componen
 import { TaskStatusComponent } from './task-status/task-status.component';
 import { ActivitiesPlaceComponent } from './activities-place/activities-place.component';
 import { ActivitiesLightboxComponent } from './activities-lightbox/activities-lightbox.component';
+import { CareplanComponent } from './careplan/careplan/careplan.component';
+import { NocareplanComponent } from './careplan/nocareplan/nocareplan.component';
 
 import { RulesCalendarService } from './rules-calendar/rules-calendar.service';
 import { ActivitiesPlaceService } from './activities-place/activities-place.service';
