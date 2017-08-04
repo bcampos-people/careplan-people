@@ -1,0 +1,48 @@
+<div id="activities_lightbox" *ngIf="visible">
+    <article class="lightbox-container {{ type == 'alright' ? 'lightbox-container--small' : '' }}">
+        <span class="close-button" (click)="closeLightbox()">×</span>
+
+        <div class="row" *ngIf="type == 'description'">
+            <div class="col-md-12">
+                <h1 class="big">{{activity.title}}</h1>
+
+                <div [innerHTML]="activity.description" class="u-margin-top-default description"></div>
+
+                <iframe *ngIf="activity.videoYoutubeId" [src]="videoUrl()" class="u-margin-top-default" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+
+                <div *ngIf="activity.note" [innerHTML]="activity.note" class="u-margin-top-default note"></div>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="type == 'alright'">
+            <div class="col-md-12">
+                <figure>
+                    <span class="with-alright-badge">
+                        <img [src]="getPhoto()" alt="placeholder" class="img-circle img-bordered">
+                    </span>
+                </figure>
+
+                <h1 class="u-margin-top-default">Parabéns por ter realizado a atividade</h1>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="type == 'non-compliance'">
+            <div class="col-md-12">
+                <h1>{{getUserName()}}, conte porque você não conseguiu fazer esta atividade.<br>Quem sabe não podemos te ajudar?</h1>
+                <textarea rows="3" class="u-margin-top-default" (change)="doTextareaValueChange($event)">{{textareaValue}}</textarea>
+                <input type="submit" class="u-margin-top-default" value="Enviar" (click)="closeLightbox('non-compliance-comment', activity)">
+            </div>
+        </div>
+
+        <div class="row" *ngIf="type == 'comment'">
+            <div class="col-md-12">
+                <h1>Comentário sobre esta atividade</h1>
+                <textarea rows="5" class="u-margin-top-default" (change)="doTextareaValueChange($event)">{{textareaValue}}</textarea>
+                <input type="submit" class="u-margin-top-default" value="Enviar" (click)="closeLightbox('comment', activity)">
+            </div>
+        </div>
+    </article>
+
+    <div class="overlay-activities-lightbox" (click)="closeLightbox()"></div>
+</div>
+

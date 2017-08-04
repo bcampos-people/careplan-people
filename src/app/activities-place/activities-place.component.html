@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-3" *ngFor="let ac of activities">
+        <!-- box -->
+        <div class="thumbnail {{ac.status}}">
+            <div class="caption">
+                <img src="../assets/img/alright_filled.png" class="marked" *ngIf="ac.status == 'done ok'">
+                <img src="../assets/img/non-compliance_filled.png" class="marked" *ngIf="ac.status == 'done wrong'">
+                <div class="type-service">
+                    <i>{{ac.type}}</i>
+                </div>
+                <h3>{{ac.title}}</h3>
+                <p>
+                    <a class="btn-desc" role="button" (click)="showDescription(ac)">Descrição</a>
+                </p>
+                <div class="box-button">
+                    <!-- if done -->
+                    <a (click)="onResetStatus(ac)" class="btn btn-option" role="button" *ngIf="ac.status != ''">
+                        <img src="../assets/img/update.png">
+                        <span class="name">alterar</span>
+                    </a>
+                    <a (click)="onComment(ac)" class="btn btn-option" role="button" *ngIf="ac.status != ''">
+                        <img src="../assets/img/comments.png">
+                        <span class="name">comentar</span>
+                    </a>
+
+                    <!-- else -->
+                    <a (click)="onNonCompliance(ac)" class="btn btn-option" role="button" *ngIf="ac.status == ''">
+                        <img src="../assets/img/non-compliance_empty.png">
+                        <span class="name">Não Consegui</span>
+                    </a>
+                    <a (click)="onAlright(ac)" class="btn btn-option" role="button" *ngIf="ac.status == '' ">
+                        <img src="../assets/img/alright_empty.png">
+                        <span class="name">Consegui</span>
+                    </a>
+
+                </div>
+                <div class="comments">
+                    <div *ngIf="ac.message != ''">
+                        <span class="comment">{{ac.message}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<app-activities-lightbox [activity]="selectedActivity" [type]="lightboxType" [visible]="showLightbox" (close)="onCloseLightbox($event)"></app-activities-lightbox>

@@ -1,0 +1,79 @@
+<div id="alerts-scope">
+    <div class="col-md-1">
+        <a class="alerts-scope__control" (mouseenter)="noticesCount > 0 ? showNotices=true : ''" (mouseleave)="showNotices=false">
+            <img src="../assets/img/bell.png"/><span class="badge">{{noticesCount > 0 ? noticesCount : ''}}</span>
+
+            <div class="alerts-scope__details" [hidden]="!showNotices">
+                <div class="alerts-scope__details__pre-message">
+                    Você ainda possui {{noticesCount}} atividade{{noticesCount > 1 ? 's' : ''}} para hoje.<br>
+                    Vamos tentar concluir agora?
+                </div>
+
+                <ul class="alerts-scope__messages alerts-scope__messages--has-sub">
+                    <li *ngFor="let notice of notices">
+                        <h3 class="alerts-scope__details__title">{{notice.type}} ({{notice.messages.length}})</h3>
+
+                        <ul>
+                            <li *ngFor="let message of notice.messages">{{message}}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-1">
+        <a class="alerts-scope__control" (mouseenter)="safety.length > 0 ? showSafety=true : ''" (mouseleave)="showSafety=false">
+            <img src="../assets/img/lock.png"/><span class="badge">{{safety.length > 0 ? safety.length : ''}}</span>
+
+            <div class="alerts-scope__details" [hidden]="!showSafety">
+                <div class="alerts-scope__details__title">
+                    Informação de segurança ao paciente
+                </div>
+
+                <ul class="alerts-scope__messages">
+                    <li *ngFor="let message of safety">
+                        {{message}}
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-1">
+        <a class="alerts-scope__control" (mouseenter)="allergies.length > 0 ? showAllergies=true : ''" (mouseleave)="showAllergies=false">
+            <img src="../assets/img/forbidden.png"/><span class="badge">{{allergies.length > 0 ? allergies.length : ''}}</span>
+
+            <div class="alerts-scope__details alerts-scope__details--auto-width" [hidden]="!showAllergies">
+                <div class="alerts-scope__details__title">
+                    Alergias
+                </div>
+
+                <ul class="alerts-scope__messages">
+                    <li *ngFor="let message of allergies">
+                        {{message}}
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-1">
+        <a class="alerts-scope__control" (mouseenter)="showInfos=true" (mouseleave)="showInfos=false">
+            <img src="../assets/img/info.png"/>
+
+            <div class="alerts-scope__details" [hidden]="!showInfos">
+                <div class="alerts-scope__details__title">
+                    Informações gerais ao paciente
+                </div>
+
+                <ul class="alerts-scope__messages">
+                    <li *ngFor="let message of infos">
+                        {{message}}
+                    </li>
+                </ul>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="overlay-alerts-scope" [hidden]="!showNotices && !showSafety && !showAllergies && !showInfos"></div>

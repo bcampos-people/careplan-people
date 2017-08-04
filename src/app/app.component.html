@@ -1,0 +1,31 @@
+<header id="header-page">
+    <!-- header_superior -->
+    <div id="header_superior">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div id="logo">
+                        <a href="/"><img src="../assets/img/logo.png"/></a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <app-greeting></app-greeting>
+                </div>
+                <app-alerts-scope></app-alerts-scope>
+                <app-ajust-font></app-ajust-font>
+            </div>
+        </div>
+    </div>
+
+    <!-- rules_calendar -->
+    <app-rules-calendar></app-rules-calendar>
+
+    <!-- task_status -->
+    <app-task-status></app-task-status>
+</header>
+<!-- content_page -->
+<main id="content_page">
+    <div class="container">
+        <app-activities-place></app-activities-place>
+    </div>
+</main>

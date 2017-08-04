@@ -1,0 +1,790 @@
+@import 'fonts/skolasans/stylesheet.css';
+.u-margin-top-default {
+  margin-top: 40px !important;
+}
+.img-bordered {
+  border: 1px solid #e0dfdf;
+  padding: 7px;
+}
+.with-alright-badge {
+  display: inline-block;
+  position: relative;
+}
+.with-alright-badge:after {
+  content: '';
+  background: url(../img/icons.png) no-repeat -93px -63px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-size: 459px;
+}
+textarea {
+  border: 1px dashed;
+  border-radius: 5px;
+  color: #716a62;
+  padding: 15px 20px;
+  width: 100%;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+textarea:focus {
+  outline: none;
+}
+[type=submit] {
+  font-family: 'skolasansblack';
+  background: #ce9e92;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  padding: 7px 20px;
+}
+html,
+body {
+  font-family: 'skolasansregular';
+  font-size: "15px";
+  background-color: #FFF;
+}
+#header-page #header_superior {
+  margin-top: 18px;
+  margin-bottom: 17px;
+}
+#header-page #header_superior #greeting-message {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#header-page #header_superior #greeting-message .greeting {
+  display: block;
+  margin-top: 3px;
+  margin-left: 5px;
+  color: #b47e71;
+  font-family: 'skolasansmedium';
+  font-size: 18px;
+}
+#header-page #header_superior #alerts-scope,
+#header-page #header_superior #ajust-font {
+  margin-top: 6px;
+}
+#header-page #header_superior #alerts-scope a,
+#header-page #header_superior #ajust-font a {
+  position: relative;
+  display: block;
+  clear: both;
+}
+#header-page #header_superior #alerts-scope a img,
+#header-page #header_superior #ajust-font a img {
+  max-width: 46px;
+  max-height: 25px;
+  position: relative;
+  top: 50%;
+  left: 34%;
+}
+#header-page #header_superior #alerts-scope a .badge,
+#header-page #header_superior #ajust-font a .badge {
+  background-color: #c83247;
+  position: absolute;
+  top: -40%;
+  left: 64%;
+  padding: 4px 7px;
+}
+#header-page #header_superior #ajust-font a img {
+  left: 20%;
+}
+#header-page #rules_calendar {
+  background-color: #7d746d;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+#header-page #rules_calendar a {
+  display: block;
+}
+#header-page #rules_calendar a:hover {
+  text-decoration: none;
+}
+#header-page #rules_calendar .with-plan,
+#header-page #rules_calendar .without-plan {
+  margin-left: -4px;
+}
+#header-page #rules_calendar .with-plan .before,
+#header-page #rules_calendar .without-plan .before,
+#header-page #rules_calendar .with-plan .after,
+#header-page #rules_calendar .without-plan .after,
+#header-page #rules_calendar .with-plan .release-medical,
+#header-page #rules_calendar .without-plan .release-medical {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+#header-page #rules_calendar .with-plan .before:after,
+#header-page #rules_calendar .without-plan .before:after,
+#header-page #rules_calendar .with-plan .after:after,
+#header-page #rules_calendar .without-plan .after:after,
+#header-page #rules_calendar .with-plan .release-medical:after,
+#header-page #rules_calendar .without-plan .release-medical:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  bottom: 2px;
+  left: 13px;
+  right: 13px;
+  border-radius: 50%;
+  border: 2px dashed #cdc0b9;
+}
+#header-page #rules_calendar .with-plan .before .number,
+#header-page #rules_calendar .without-plan .before .number,
+#header-page #rules_calendar .with-plan .after .number,
+#header-page #rules_calendar .without-plan .after .number,
+#header-page #rules_calendar .with-plan .release-medical .number,
+#header-page #rules_calendar .without-plan .release-medical .number,
+#header-page #rules_calendar .with-plan .before .month,
+#header-page #rules_calendar .without-plan .before .month,
+#header-page #rules_calendar .with-plan .after .month,
+#header-page #rules_calendar .without-plan .after .month,
+#header-page #rules_calendar .with-plan .release-medical .month,
+#header-page #rules_calendar .without-plan .release-medical .month {
+  display: block;
+  text-align: center;
+  color: #FFF;
+  line-height: 24px;
+}
+#header-page #rules_calendar .with-plan .before .number,
+#header-page #rules_calendar .without-plan .before .number,
+#header-page #rules_calendar .with-plan .after .number,
+#header-page #rules_calendar .without-plan .after .number,
+#header-page #rules_calendar .with-plan .release-medical .number,
+#header-page #rules_calendar .without-plan .release-medical .number {
+  font-size: 30px;
+  padding-top: 14px;
+}
+#header-page #rules_calendar .with-plan .before .month,
+#header-page #rules_calendar .without-plan .before .month,
+#header-page #rules_calendar .with-plan .after .month,
+#header-page #rules_calendar .without-plan .after .month,
+#header-page #rules_calendar .with-plan .release-medical .month,
+#header-page #rules_calendar .without-plan .release-medical .month {
+  font-family: 'skolasansmedium';
+  font-size: 18px;
+}
+#header-page #rules_calendar .with-plan .today,
+#header-page #rules_calendar .without-plan .today {
+  position: absolute;
+  top: 0px;
+  left: 9px;
+  width: 90%;
+  background-color: #FFF;
+  padding: 0 0 10px;
+  border-radius: 5px;
+}
+#header-page #rules_calendar .with-plan .today .title,
+#header-page #rules_calendar .without-plan .today .title {
+  color: #FFF;
+  background-color: #ce9e93;
+  display: block;
+  text-align: center;
+  font-family: 'skolasansbold';
+  font-size: 21px;
+  border-radius: 5px 5px 0px 0px;
+}
+#header-page #rules_calendar .with-plan .today .number,
+#header-page #rules_calendar .without-plan .today .number,
+#header-page #rules_calendar .with-plan .today .month,
+#header-page #rules_calendar .without-plan .today .month {
+  display: block;
+  color: #3b342e;
+  text-align: center;
+  font-family: 'skolasansblack';
+}
+#header-page #rules_calendar .with-plan .today .number,
+#header-page #rules_calendar .without-plan .today .number {
+  font-size: 45px;
+  line-height: 30px;
+  padding-top: 15px;
+}
+#header-page #rules_calendar .with-plan .today .month,
+#header-page #rules_calendar .without-plan .today .month {
+  font-size: 24px;
+  line-height: 24px;
+}
+#header-page #rules_calendar .with-plan .today .content,
+#header-page #rules_calendar .without-plan .today .content {
+  position: relative;
+}
+#header-page #rules_calendar .with-plan .today .content .open-calendar,
+#header-page #rules_calendar .without-plan .today .content .open-calendar {
+  position: absolute;
+  top: 40px;
+  right: 21px;
+}
+#header-page #rules_calendar .with-plan .today .content .open-calendar img,
+#header-page #rules_calendar .without-plan .today .content .open-calendar img {
+  max-width: 46px;
+  max-height: 25px;
+}
+#header-page #rules_calendar .with-plan .release-medical,
+#header-page #rules_calendar .without-plan .release-medical {
+  background-color: #3b342e;
+}
+#header-page #rules_calendar .with-plan .release-medical:after,
+#header-page #rules_calendar .without-plan .release-medical:after {
+  border: 2px solid #3b342e;
+}
+#header-page #rules_calendar .with-plan .content-release-medical,
+#header-page #rules_calendar .without-plan .content-release-medical {
+  position: relative;
+}
+#header-page #rules_calendar .with-plan .content-release-medical .content,
+#header-page #rules_calendar .without-plan .content-release-medical .content {
+  position: absolute;
+  bottom: -42px;
+  left: -28px;
+  z-index: 999;
+  background-color: #5d544c;
+  padding: 5px;
+  border-radius: 3px;
+}
+#header-page #rules_calendar .with-plan .content-release-medical .content .desc,
+#header-page #rules_calendar .without-plan .content-release-medical .content .desc,
+#header-page #rules_calendar .with-plan .content-release-medical .content a,
+#header-page #rules_calendar .without-plan .content-release-medical .content a {
+  display: block;
+  font-family: 'skolasansbold';
+  font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+}
+#header-page #rules_calendar .with-plan .content-release-medical .content .desc,
+#header-page #rules_calendar .without-plan .content-release-medical .content .desc {
+  color: #FFF;
+}
+#header-page #rules_calendar .with-plan .content-release-medical .content a,
+#header-page #rules_calendar .without-plan .content-release-medical .content a {
+  color: #ce9e93;
+  text-decoration: underline;
+}
+#header-page #rules_calendar .without-plan .before:after,
+#header-page #rules_calendar .without-plan .after:after {
+  border: 2px solid #bbb4ae;
+}
+#header-page #rules_calendar .progress-radius {
+  position: relative;
+}
+#header-page #rules_calendar .progress-radius .radius {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#header-page #task_status {
+  background: #b3aaa2;
+  background: -moz-linear-gradient(left, #b3aaa2 0%, #afa69e 0%, #b2a9a2 0%, #b4aba4 1%, #c4bcb6 14%, #c9c2bc 19%, #c9c2bc 73%, #c4bcb6 81%, #b2a9a2 100%);
+  background: -webkit-linear-gradient(left, #b3aaa2 0%, #afa69e 0%, #b2a9a2 0%, #b4aba4 1%, #c4bcb6 14%, #c9c2bc 19%, #c9c2bc 73%, #c4bcb6 81%, #b2a9a2 100%);
+  background: linear-gradient(to right, #b3aaa2 0%, #afa69e 0%, #b2a9a2 0%, #b4aba4 1%, #c4bcb6 14%, #c9c2bc 19%, #c9c2bc 73%, #c4bcb6 81%, #b2a9a2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3aaa2', endColorstr='#b2a9a2', GradientType=1);
+  padding-top: 35px;
+  padding-bottom: 12px;
+}
+#header-page #task_status figure {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+}
+#header-page #task_status figure img {
+  min-width: 97px;
+  min-height: 97px;
+}
+#header-page #task_status .status {
+  position: relative;
+}
+#header-page #task_status .status .message {
+  font-family: 'skolasansblack';
+  color: #FFF;
+  font-size: 27px;
+  text-align: center;
+}
+#header-page #task_status .status .progress {
+  height: 28px;
+  outline-offset: 2px;
+  border-radius: 10px;
+  background-color: #bdb6b0;
+  border: 1px solid #d3cec9;
+  border-top-color: rgba(140, 135, 131, 0.41);
+  border-left-color: rgba(140, 135, 131, 0.41);
+}
+#header-page #task_status .status .progress:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 43px;
+  bottom: 15px;
+  left: -5px;
+  right: -5px;
+  border-radius: 17px;
+  border: 2px dashed #998b82;
+}
+#header-page #task_status .status .progress .progress-bar {
+  background-color: #FFF;
+  border-radius: 10px;
+}
+#header-page #task_status .status .status-info {
+  position: absolute;
+  bottom: -22px;
+  left: 34%;
+  font-family: 'skolasansblack';
+  font-size: 15px;
+  color: #FFF;
+  background-color: #b8b2ad;
+  padding: 8px 14px;
+  text-transform: uppercase;
+}
+#content_page {
+  padding-top: 30px;
+}
+#content_page .thumbnail {
+  border: none;
+  position: relative;
+  background-color: #efe9e4;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+#content_page .thumbnail .type-service {
+  font-family: 'skolasansbold';
+  font-size: 15px;
+  text-align: center;
+  color: #7f664f;
+  text-transform: uppercase;
+}
+#content_page .thumbnail .type-service i {
+  background-color: #FFF;
+  font-style: normal;
+  padding: 2px 7px;
+}
+#content_page .thumbnail h3 {
+  font-family: 'skolasansblack';
+  font-size: 22px;
+  color: #3b342e;
+  text-align: center;
+  min-height: 48px;
+  max-height: 48px;
+  overflow: hidden;
+}
+#content_page .thumbnail .btn-desc {
+  font-family: 'skolasansbold';
+  font-size: 15px;
+  color: #c98d7f;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
+#content_page .thumbnail .box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#content_page .thumbnail .btn-option {
+  font-family: 'skolasansblack';
+  font-size: 15px;
+  color: #54555a;
+}
+#content_page .thumbnail .comments {
+  height: 41px;
+}
+#content_page .thumbnail .comments .comment {
+  font-family: 'skolasansbold';
+  font-size: 13px;
+  color: #FFF;
+  display: block;
+  background-color: #b8b2ad;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 0px;
+  position: relative;
+}
+#content_page .thumbnail .comments .comment:after {
+  content: url("../img/tip-ballon.png");
+  display: block;
+  position: absolute;
+  top: 28px;
+  bottom: 0;
+  left: -81%;
+  right: 0;
+}
+#content_page .thumbnail.done {
+  background-color: #FFF;
+  border: 1px solid #8d8781;
+}
+#content_page .thumbnail.done .type-service i {
+  color: #9a8d85;
+  background-color: #eee9e5;
+}
+#content_page .thumbnail.done h3 {
+  color: #90847d;
+}
+#content_page .thumbnail.done .btn-option {
+  color: #c98d7f;
+}
+#content_page .thumbnail.done .comments {
+  height: 38px;
+}
+#content_page .thumbnail .marked {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+}
+.c-ajust-font {
+  cursor: pointer;
+  display: inline-block !important;
+  height: 23px;
+  width: 21px;
+}
+.c-ajust-font--increase {
+  background: url('../img/fonts.png') no-repeat;
+}
+.c-ajust-font--decrease {
+  background: url('../img/fonts.png') no-repeat;
+  background-position-x: -20px;
+}
+.overlay-rules-calendar,
+.overlay-activities-lightbox,
+.overlay-alerts-scope {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.overlay-rules-calendar,
+.overlay-activities-lightbox {
+  z-index: 1500;
+}
+.alerts-scope__control {
+  z-index: 1010;
+}
+.alerts-scope__control:hover {
+  position: absolute;
+}
+.alerts-scope__control:hover::before {
+  content: '';
+  width: 100%;
+  height: 82px;
+  background-color: #eee9e5;
+  display: block;
+  position: absolute;
+  top: -25px;
+}
+.alerts-scope__details {
+  background-color: #eee9e5;
+  color: #3b342e;
+  cursor: default;
+  font-weight: bold;
+  padding: 60px;
+  position: absolute;
+  right: 0;
+  top: 45px;
+  width: 600px;
+  z-index: 1010;
+}
+.alerts-scope__details--auto-width {
+  max-width: 600px;
+  width: auto;
+}
+.alerts-scope__details__title {
+  font-family: 'skolasansblack';
+  color: #3d3630;
+  font-size: 20px;
+}
+.alerts-scope__details__pre-message {
+  color: #39322c;
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.alerts-scope__messages {
+  font-weight: bold;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  padding: 20px 20px 0 20px;
+}
+.alerts-scope__messages li {
+  position: relative;
+  list-style: none;
+  color: #75573d;
+}
+.alerts-scope__messages li::before {
+  content: url("../img/check.png");
+  transform: scale(0.5);
+  position: absolute;
+  left: -27px;
+}
+.alerts-scope__messages--has-sub {
+  padding: 0;
+}
+.alerts-scope__messages--has-sub > li::before {
+  content: none;
+}
+.alerts-scope__messages--has-sub > li > ul {
+  padding-left: 20px;
+}
+.lightbox-container {
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 17px;
+  left: 50%;
+  line-height: 1.5;
+  margin-left: -400px;
+  padding: 80px 120px;
+  position: absolute;
+  text-align: center;
+  top: 120px;
+  width: 800px;
+  z-index: 1510;
+}
+.lightbox-container .close-button {
+  color: #d1c0b9;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  position: absolute;
+  right: 12px;
+  top: 0;
+  transition: color 500ms;
+}
+.lightbox-container .close-button:hover {
+  color: #333;
+}
+.lightbox-container h1 {
+  font-family: 'skolasansblack';
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0;
+}
+.lightbox-container h1.big {
+  font-size: 36px;
+}
+.lightbox-container .description {
+  color: #827974;
+  font-weight: bold;
+}
+.lightbox-container .note {
+  background-color: #b7b2ae;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  padding: 25px;
+  position: relative;
+  text-align: left;
+}
+.lightbox-container .note::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid #b7b2ae;
+  clear: both;
+}
+.lightbox-container--small {
+  margin-left: -230px;
+  padding: 80px;
+  width: 460px;
+}
+.c-calendar__control {
+  cursor: pointer;
+}
+.c-calendar__control.is-open {
+  z-index: 1510;
+}
+.c-calendar__control.is-open .open-calendar {
+  transform: scaleY(-1) translateY(-2px);
+}
+.c-calendar__full {
+  background-color: #eee9e5;
+  border-radius: 5px;
+  color: #3b342e;
+  cursor: default;
+  font-weight: bold;
+  left: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 113px;
+  z-index: 1510;
+}
+.c-calendar__title {
+  font-family: 'skolasansblack';
+  border-bottom: 2px solid #f4f5f7;
+  color: #b2a8a6;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 15px 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.c-calendar__btn {
+  background-image: url("../img/arrow.png");
+  background-position: 20px;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  border-radius: 50%;
+  border: 1px solid #c7c6c4;
+  color: transparent;
+  display: block;
+  font-size: 1px;
+  height: 55px !important;
+  max-height: 55px;
+  max-width: 55px;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  width: 55px !important;
+}
+.c-calendar__btn:active {
+  background-image: url("../img/arrow.png");
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.c-calendar__btn--prev {
+  left: 39px;
+  transform: scaleX(-1);
+}
+.c-calendar__btn--next {
+  right: 39px;
+}
+.c-calendar__inner {
+  background: #fff;
+  padding: 20px 40px;
+  position: relative;
+}
+.c-calendar-note-wrapper {
+  padding: 30px 5px 20px;
+}
+.c-calendar-note-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.c-calendar-note {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  color: #867c73;
+  margin-right: 10px;
+  line-height: 1;
+}
+.c-calendar-note:last-child {
+  margin-right: 0;
+}
+.c-calendar-note::before {
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #867c73;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: text-top;
+}
+.c-calendar-note--pending::before {
+  border: 1px dashed #867c73;
+}
+.c-calendar-note--today {
+  color: #3b342e;
+}
+.c-calendar-note--today::before {
+  background-color: #3b342e;
+}
+.c-calendar-note--release-medical {
+  color: #7f766f;
+}
+.c-calendar-note--release-medical::before {
+  background-color: #7f766f;
+}
+.cal-header .cal-cell {
+  font-family: 'skolasansblack';
+  color: #c3a09a;
+  font-size: 1.3em;
+  padding: 15px 0 !important;
+}
+.cal-days,
+.cal-cell-row {
+  border: none !important;
+}
+.cal-cell {
+  border: none !important;
+  height: 55px !important;
+  margin: 3px 10px;
+  max-height: 55px !important;
+  max-width: 55px !important;
+  min-height: 55px !important;
+  min-width: 55px !important;
+  width: 55px !important;
+}
+.cal-cell-top {
+  border-radius: 50% !important;
+  height: 55px !important;
+  max-height: 55px !important;
+  max-width: 55px !important;
+  min-height: 55px !important;
+  min-width: 55px !important;
+  width: 55px !important;
+}
+.cal-has-events .cal-cell-top {
+  border: 1px solid #7e756e !important;
+}
+.cal-has-events.cal-future .cal-cell-top {
+  border: 1px dashed #7e756e !important;
+}
+.cal-month-view .cal-cell-row .cal-cell:hover,
+.cal-month-view .cal-cell-row:hover {
+  background-color: transparent;
+}
+.cal-events,
+.cal-day-badge {
+  display: none !important;
+}
+.cal-month-view .cal-day-cell.cal-out-month .cal-day-number {
+  opacity: .5;
+}
+.cal-month-view .cal-day-number {
+  color: #9b908a;
+  font-size: 1.3em;
+  opacity: 1;
+}
+.cal-month-view .cal-day-cell.cal-weekend .cal-day-number {
+  color: #9b908a;
+}
+.cal-month-view .cal-day-cell.cal-today {
+  background-color: transparent !important;
+}
+.cal-month-view .cal-day-cell.cal-today .cal-cell-top {
+  background-color: #3b342e;
+}
+.cal-month-view .cal-day-cell.cal-today .cal-day-number {
+  font-family: 'skolasansblack';
+  color: #fff !important;
+  font-size: 1.5em;
+  margin-top: 12px;
+  margin-right: 13px;
+}
+.cal-cell-top.event-release-medical {
+  background-color: #7e756e;
+}
+.cal-cell-top.event-release-medical .cal-day-number {
+  color: #fff !important;
+}

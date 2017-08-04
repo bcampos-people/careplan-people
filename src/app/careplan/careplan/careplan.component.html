@@ -1,0 +1,109 @@
+<p><span>
+  Plano de Cuidados do paciente {{myPatient.name}} no quarto {{myRoom}}.
+</span></p>
+<span *ngIf="myPlan">
+  <p><span>Id: {{myPlan.id}}</span></p>
+  <p><span>PatientId: {{myPlan.patientId}}</span></p>
+  <p><span>Status: {{myPlan.status}}</span></p>
+  <p><span>Início:</span><span *ngIf="myPlan.period && myPlan.period.startDate && myPlan.period.startDate.dateTime">
+    {{myPlan.period.startDate.dateTime * 1000 | date:'medium'}}
+    </span>
+  </p>
+  <p><span>Fim:</span><span *ngIf="myPlan.period && myPlan.period.endDate && myPlan.period.endDate.dateTime">
+    {{myPlan.period.endDate.dateTime * 1000 | date:'medium'}}
+    </span>
+  </p>
+  <p><span>Autor: {{myPlan.authorId}}</span></p>
+  <p><span>Modificado:</span><span *ngIf="myPlan.modified && myPlan.modified.dateTime">
+    {{myPlan.modified.dateTime * 1000 | date:'medium'}}
+    </span>
+  </p>
+  <p><span>Descrição: {{myPlan.description}}</span></p>
+  <span *ngIf="myPlan.participants">
+    <p><span>Participantes:</span></p>
+    <li *ngFor="let participant of myPlan.participants">
+      {{participant}}
+    </li>
+  </span>
+  <span *ngIf="myPlan.goalIds">
+    <p><span>Ids de metas:</span></p>
+    <li *ngFor="let goalId of myPlan.goalIds">
+      {{goalId}}
+    </li>
+  </span>
+  <span *ngIf="myPlan.goals">
+    <p><span>Metas:</span></p>
+    <li *ngFor="let goal of myPlan.goals">
+      <span>Goal Description: </span> {{goal.description}}
+    </li>
+  </span>
+</span>
+<span *ngIf="myAllergies">
+  <p><span>Alergias:</span></p>
+  <li *ngFor="let allergy of myAllergies.dtoList">
+    <span>Substância: </span> {{allergy.substance}}
+  </li>
+</span>
+<span *ngIf="myIssues">
+  <p><span>Informações de Segurança:</span></p>
+  <li *ngFor="let issue of myIssues.dtoList">
+    <span>Descrição: </span> {{issue.detail}}
+  </li>
+</span>
+<span *ngIf="communications">
+  <p><span>Informações Gerais:</span></p>
+  <li *ngFor="let comm of communications.dtoList">
+    <span>Descrição: </span> {{comm.content}}
+  </li>
+</span>
+<span *ngIf="allergyCategories">
+  <p><span>Categorias de Alergias:</span></p>
+  <li *ngFor="let alcat of allergyCategories">
+    {{alcat}}
+  </li>
+</span>
+<span *ngIf="allergyCriticalities">
+  <p><span>Criticalidades de Alergias:</span></p>
+  <li *ngFor="let alcrit of allergyCriticalities">
+    {{alcrit}}
+  </li>
+</span>
+<span *ngIf="allergySubstances">
+  <p><span>Substâncias conhecidas que causam alergias:</span></p>
+  <li *ngFor="let alsub of allergySubstances">
+    {{alsub.display}}
+  </li>
+</span>
+<span *ngIf="goalCategories">
+  <p><span>Categorias de Metas:</span></p>
+  <li *ngFor="let goalCategory of goalCategories">
+    {{goalCategory.display}}
+  </li>
+</span>
+<span *ngIf="goalPriorities">
+  <p><span>Prioridades de Metas:</span></p>
+  <li *ngFor="let goalPriority of goalPriorities">
+    {{goalPriority}}
+  </li>
+</span>
+<span *ngIf="goalStatuses">
+  <p><span>Status de Metas:</span></p>
+  <li *ngFor="let goalStatus of goalStatuses">
+    {{goalStatus}}
+  </li>
+</span>
+<!-- <span *ngIf="patients">
+  <p><span>Pacientes do Copastar:</span></p>
+  <li *ngFor="let patient of patients.dtoList">
+    <span>Id: </span> {{patient.id}}
+  </li>
+</span>
+<span *ngIf="plans">
+  <p><span>Planos de Pacientes do Copastar:</span></p>
+  <li *ngFor="let plan of plans">
+    <span>Id: {{plan.id}}</span>
+    <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PatientId: {{plan.patientId}}</span></p>
+    <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status: {{plan.status}}</span></p>
+  </li>
+</span> -->
+<router-outlet></router-outlet>
